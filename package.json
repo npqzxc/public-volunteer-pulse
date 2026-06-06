@@ -1,0 +1,23 @@
+{
+  "name": "public-volunteer-pulse",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \\"node --import tsx server/main.ts\\" \\"vite\\"",
+    "build": "vite build",
+    "start": "node --import tsx server/main.ts"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "vue": "^3.4.27",
+    "vue-router": "^4.3.2"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.4",
+    "concurrently": "^8.2.2",
+    "tsx": "^4.10.5",
+    "typescript": "^5.4.5",
+    "vite": "^5.2.11"
+  }
+}
